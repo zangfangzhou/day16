@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.d1{
+				width: 100px;
+				height: 100px;
+				background-color: aqua;
+			}
+			.d2{
+				text-align: center;
+				line-height: 100px;
+			}
+		</style>
+		<script type="text/javascript">
+			/* var value1;
+			alert();
+			value1 = confirm();
+			if(value1){
+				open("https://www.baidu.com","_blank");
+			}else{
+				close();
+			} */
+			
+			/* setTimeout(function(){
+				console.log("Hello World");
+			},1000); */
+			
+			/* var pp = function print(){
+				console.log("aaaaa");
+			}
+			
+			function newPrint(){
+				console.log("bbbb");
+			}
+			setTimeout("newPrint()",1000); */
+			
+			/* setInterval(function(){
+				console.log("aaaa");
+			},3000); */
+			
+			/* var s1 = screen.width;
+			var s2 = screen.height;
+			window.status="Some text in the status bar!!"
+			console.log(s1);
+			console.log(s2); */
+			/* window.location.href="https://www.baidu.com"; */
+			window.onload = function(){
+				document.getElementById("p1").innerHTML= "<h1>12333121212</h1>";
+				document.getElementsByTagName("div")[0].className = "d1 d2";
+				document.querySelector("div").className = "d1 d2";
+				var x=document.getElementById("myInput");
+				x.onkeyup =  function (event) {
+					if(event.keyCode == 13){
+						alert("你按了回车键");
+					}
+				}
+			}
+			
+			/* function testkey(event){
+				if(event.keyCode == 13){
+					alert("你按了回车键");
+				}
+			}
+			onkeyup = "testkey(event)"; */
+		</script>
+	</head>
+	<body>
+		<p id="p1">123</p>
+		<div>123</div>
+		<input type="text" name="" id="myInput" value="" />
+		<script type="text/javascript">	
+		</script>
+	</body>
+</html>
